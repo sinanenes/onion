@@ -15,7 +15,7 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//db connection
+//db connection...
 builder.Services.AddDbContext<PersonelDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DHMLocal")));
 
 // Add services to the container.
